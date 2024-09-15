@@ -79,12 +79,12 @@ body{
 }
 .scroll-to-top {
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: brown;
   size: 5rem;
   display: block;
   width: var(--size);
   height: var(--size);
-  color: brown;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,62 +302,40 @@ flex-direction: column;
 
 /*amenities stylings*/
 
-.amenities-section{
-  margin-top: 1rem;
-  padding: 2rem;
-  
-}
-.amenities-container{
-  display: flex; 
-  padding-inline: 3rem;
-  background-color: burlywood;
+.amenities-container {
+  display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: space-between;
-  margin-block: 2rem;
+  gap: 20px; 
+  justify-content: center; 
+  margin: 20px auto; 
+  max-width: 1200px; 
 }
 
-.video{
+.amenity-card {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.vid{
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-.amenities-card{
-  display: flex;
-  align-items: stretch;
-  background-color: darksalmon;
-  border: 2px solid red;
-  flex: 1 1 20%;
-  width: 25rem;
   flex-direction: column;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 10px;
+  align-items: center;
+  width: 280px; 
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 56.25em) {
-  .amenities-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .amenities-text {
-    padding: 1rem;
-    width: fit-content;
-  }
+
+.amenity-card video {
+  width: 100%; 
+  height: 180px;  
+  border-radius: 5px; 
+  margin-bottom: 10px; 
 }
-.amenity-text{
-  text-transform: capitalize;
-  color: brown;
-  letter-spacing: 1px;
-  margin-bottom: 1.5px;
-  font-size: 1.2rem;
+
+.amenity-card p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 0;
 }
 
 .contact-us-section{
@@ -468,41 +446,3 @@ margin-left: 2px;
 }
 
 
-/* Container for all amenities */
-.amenities-container {
-  display: flex;
-  flex-wrap: wrap; /* Allows the cards to wrap onto a new line */
-  gap: 20px; /* Space between the cards */
-  justify-content: center; /* Center the cards */
-  margin: 20px auto; /* Space around the container */
-  max-width: 1200px; /* Maximum width for the container */
-}
-
-/* Styling for each amenity card */
-.amenity-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px; /* Set a fixed width for uniformity */
-  padding: 15px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-/* Styling for video elements */
-.amenity-card video {
-  width: 100%; /* Make the video take up the full width of the card */
-  height: 180px; /* Set height for the video */
-  border-radius: 5px; /* Rounded corners for videos */
-  margin-bottom: 10px; /* Space between the video and description */
-}
-
-/* Styling for text */
-.amenity-card p {
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-  margin: 0;
-}
