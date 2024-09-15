@@ -181,103 +181,53 @@
     <!-- end of spaces section -->
   
     <!-- amenities section -->
-    <section class="amenities-section" id="amenities">
-      <h2 class="title">our amenities</h2>
-      <div class="amenities-container">
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free wifi</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/wifi.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">high speed for all residents.available in all rooms except single rooms</p>
-          </div>
-        </div>  
-
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free parking</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/parking.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">high speed for all residents.available in all rooms except single rooms</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free water</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/water.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">free for everyone</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free gym</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/GYM.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">availabe and free for all residents except those living in single rooms and bedsitters</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free swimming-pool</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/SWIMMING.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">free and available for everyone</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> free theatre</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/theatre.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">free for everyone</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> onsite laundry</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/laundry.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">@150 per bucket</p>
-          </div>
-        </div>  
-
-        <div class="amenities-card>">
-          <h3 class="amenity-title"> elevator</h3>
-          <div class="video">
-            <video autoplay loop muted class="vid">
-              <source src="./assets/elevator.mp4"/>
-              <p>your browser does not support videos</p>
-            </video>
-            <p class="amenities-text">availabe for easy access to upper floors</p>
-          </div>
-        </div> 
-        
+     <section class="amenities-section">
+     <h2 class="title">amenities</h2>
+    <div class="amenities-container">
+      <div class="amenity-card">
+        <video src="./assets/wifi.mp4" controls></video>
+        <p>Free WiFi (except single rooms)</p>
       </div>
-
-    </section>
+    
+      <div class="amenity-card">
+        <video src="./assets/parking.mp4" controls></video>
+        <p>Free Parking (except single rooms and bedsitters)</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/laundry.mp4" controls></video>
+        <p>On-site Laundry @ Kshs.150 per basket</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/GYM.mp4" controls></video>
+        <p>Free Gym (except single rooms and bedsitters)</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/SWIMMING.mp4" controls></video>
+        <p>Swimming Pool - Free for everyone</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/elevator.mp4" controls></video>
+        <p>Elevator Access</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/water.mp4" controls></video>
+        <p>Free Water for everyone</p>
+      </div>
+    
+      <div class="amenity-card">
+        <video src="./assets/theatre.mp4" controls></video>
+        <p>Community Theatre - Free for everyone</p>
+      </div>
+    </div>
+  </section>
 
      <!-- end of amenities section -->
+
 
     <!-- contact us section -->
       <section class="contact-us-section" id="contact-us">
@@ -286,7 +236,6 @@
             <div class="contact-details">
               <p>here is how you can reach us</p>
               <div class="social-links">
-                <a href="#" class="social-link">
                  <i class="fa-solid fa-phone"></i>
                 </a>
                 <address class="contact-text">+254718764327</address>
@@ -313,20 +262,34 @@
           </div>
 
         </div>
-      </section>
-
-
-
-
-
-
-      
-
-
-
-      
+      </section>  
 
     <!--end of contact us section --> 
+
+     <!--contact form section -->
+     <section class="contact-forms">
+     <div class="contact-form-container">
+      <form class="contact-form">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+    
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+    
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here" rows="4" required></textarea>
+    
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+
+
+
+    <!--end of contact form section --> 
 
 
     

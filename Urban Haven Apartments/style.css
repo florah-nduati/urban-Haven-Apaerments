@@ -410,3 +410,99 @@ margin-left: 2px;
   font-size: 2.5rem;
   color: rgb(145, 0, 0);
 }
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: #f4f4f4; 
+  border-radius: 10px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: brown;
+  color: burlywood; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: burlywood;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 15px;
+    max-width: 100%; 
+  }
+}
+
+
+/* Container for all amenities */
+.amenities-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap onto a new line */
+  gap: 20px; /* Space between the cards */
+  justify-content: center; /* Center the cards */
+  margin: 20px auto; /* Space around the container */
+  max-width: 1200px; /* Maximum width for the container */
+}
+
+/* Styling for each amenity card */
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px; /* Set a fixed width for uniformity */
+  padding: 15px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for video elements */
+.amenity-card video {
+  width: 100%; /* Make the video take up the full width of the card */
+  height: 180px; /* Set height for the video */
+  border-radius: 5px; /* Rounded corners for videos */
+  margin-bottom: 10px; /* Space between the video and description */
+}
+
+/* Styling for text */
+.amenity-card p {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
